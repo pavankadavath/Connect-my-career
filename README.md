@@ -7,9 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 [Click here to visit the live website](https://careerguru-1wow.onrender.com/)
 
 # Sample Credentials
-recruiter->email:nirup@gmail.com
-        password:nirup@2004
-        
+recruiter->
         email- kadavathpavan12345@gmail.com
         password- pavan123
 
