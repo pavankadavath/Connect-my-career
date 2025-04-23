@@ -1,0 +1,246 @@
+.job-application-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.applications-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.filter-select {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  background-color: #4CAF50;
+
+}
+.filter-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.5);
+}
+
+.download-btn{
+  background-color: #4CAF50;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  
+   
+}
+.download-btn:hover {
+  background-color: #45a049;
+}
+.download-btn:active {
+  background-color: #3e8e41;
+  transform: translateY(2px);
+}
+.download-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.5);
+}
+
+.specific-job-details {
+  width: 80%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border: 1px solid black;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.specific-job-info{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 1px;
+  margin-bottom: 12px; 
+}
+.specific-job-info-label{
+  font-weight: 600;
+}
+.specific-job-dates{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.users-applications-details-container {
+  width: 70%;
+}
+.users-applications-details-heading{
+  color: #4caf50;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.no-applications-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.no-applications-image{
+  width: 50%;
+}
+.no-applications-heading{
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+@media screen and (max-width:600px) {
+  .job-application-details-container{
+    justify-content: center;
+  }
+  .specific-job-details{
+    width: 93%;
+  }
+  .users-applications-details-container{
+    width: 93%;
+  }
+  .no-applications-image{
+    width: 90%;
+  } 
+}
+
+
+
+/* Resume Full-Screen Popup */
+.resume-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%; /* Adjust width as needed */
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85); /* Slightly darker background for better contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Add shadow for better separation */
+}
+
+/* Resume Container */
+.resume-container {
+  width: 90%;
+  max-width: 800px;
+  /* background: white; */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Resume Image */
+.resume-image {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.close-btn:hover {
+  background: darkred;
+}
+
+.close-btn:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(255, 0, 0, 0.8);
+}
+
+/* Scrollbar Styling for Modal */
+.resume-modal::-webkit-scrollbar {
+  width: 8px;
+}
+
+.resume-modal::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.resume-modal::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+
+.resume-modal::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .resume-modal {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  .resume-container {
+    width: 95%;
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .resume-image {
+    height: 400px; /* Adjust height for smaller screens */
+  }
+
+  .close-btn {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
+
+/* Scrollbar Styling */
+.resume-modal::-webkit-scrollbar {
+  width: 8px;
+}
+
+.resume-modal::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.resume-modal::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+
+.resume-modal::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+

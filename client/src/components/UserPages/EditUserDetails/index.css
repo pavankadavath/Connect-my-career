@@ -1,0 +1,218 @@
+/* Base Styles */
+.edit-user-details-page {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.edit-user-details-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edit-user-details-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-user-details-label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.edit-user-details-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.edit-user-details-input[type="checkbox"] {
+  width: auto;
+  margin-left: 10px;
+}
+
+.edit-user-details-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-user-details-button:hover {
+  background-color: #0056b3;
+}
+
+.edit-user-details-button:disabled {
+  background-color: #d6d6d6;
+  cursor: not-allowed;
+}
+
+.edit-user-details-input:focus, 
+.edit-user-details-button:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Image preview styles */
+.edit-user-details-img-preview {
+  max-width: 300px;
+  max-height: 300px;
+  margin-bottom: 15px;
+}
+
+.edit-user-details-upload {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+
+/* Medium Devices (Tablets, max-width: 768px) */
+@media (max-width: 768px) {
+  .edit-user-details-container {
+    padding: 15px;
+    max-width: 100%;
+    margin: 0 10px;
+  }
+
+  .edit-user-details-label {
+    font-size: 14px;
+  }
+
+  .edit-user-details-input {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .edit-user-details-button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+/* Small Devices (Mobile, max-width: 480px) */
+@media (max-width: 480px) {
+  .edit-user-details-label {
+    font-size: 12px;
+  }
+
+  .edit-user-details-input {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .edit-user-details-input[type="checkbox"] {
+    margin-left: 5px;
+  }
+
+  .edit-user-details-button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .edit-user-details-container {
+    box-shadow: none;
+  }
+}
+
+
+/* Align "Are you a student?" with checkbox */
+.student-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.student-toggle label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Toggle Switch Styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #007bff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Student fields section */
+.student-fields {
+  background: #f0f9ff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .student-toggle label {
+    font-size: 14px;
+  }
+
+  .switch {
+    width: 40px;
+    height: 20px;
+  }
+
+  .slider:before {
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 2px;
+  }
+}

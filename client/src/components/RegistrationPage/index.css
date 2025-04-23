@@ -1,0 +1,221 @@
+/* General Container */
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 700px) {
+  .register-container {
+    padding: 10px;
+  }
+}
+
+/* Logo */
+.website-logo {
+  height: 60px;
+  width: 100px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Page Layout */
+.user-register-page {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .user-register-page {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+/* Left Image Container */
+.user-register-page-image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .user-register-page-image-container {
+    display: none;
+  }
+}
+
+.register-page-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Form Container */
+.user-register-page-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 20px;
+  width: 50%;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .user-register-page-form-container {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+/* Form Styling */
+.user-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.user-input-container {
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-register-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.user-register-element {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+.email-wrapper-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.otp-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.generate-otp-btn,
+.verify-otp-btn {
+  flex: 1;
+  padding: 10px;
+  margin: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.generate-otp-btn:disabled,
+.verify-otp-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.generate-otp-btn:hover:not(:disabled),
+.verify-otp-btn:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.password-wrapper-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  /* margin: 0; */
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+}
+
+.password-toggle-btn:hover {
+  background: none;
+  color: #000;
+}
+
+/* Error Messages */
+.error-message,
+.errormessage {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 2px;
+  text-align: center;
+}
+
+/* Button Styling */
+.register-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #45a049;
+}
+
+.register-page-button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Login Link */
+.already-have-account {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.got-to-login-link {
+  color: #4caf50;
+  cursor: pointer;
+}
+
+.got-to-login-link:hover {
+  text-decoration: underline;
+}

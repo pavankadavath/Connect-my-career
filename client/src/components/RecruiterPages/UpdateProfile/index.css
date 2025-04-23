@@ -1,0 +1,148 @@
+.update-profile-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #2c2f33; /* Dark gray background */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.update-profile-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4caf50;
+}
+
+.update-profile-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    color: #ddd;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #3a3e42;
+    color: white;
+    outline: none;
+}
+
+.input-field:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.update-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.update-btn:hover {
+    background-color: #388e3c;
+}
+
+.message {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.success-message {
+    color: #4caf50;
+}
+
+.error-message {
+    color: red;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .update-profile-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .update-profile-title {
+        font-size: 20px;
+    }
+
+    .input-field {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .update-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Flex container for centering */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the title */
+  .edit-user-details-title {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Flex container for image with center alignment */
+  .company-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 20px; */
+  }
+  
+  /* Responsive image styles */
+  .company-logo {
+    width: 100px; /* Set smaller size */
+    height: 100px; /* Set smaller size */
+    object-fit: cover; /* Ensure image covers area without distortion */
+    border-radius: 50%;
+    /* border: 2px solid #ccc; */
+  }
+  
+  /* Make it responsive on smaller screens */
+  @media (max-width: 768px) {
+    .company-logo {
+      width: 80px;  /* Smaller size on mobile */
+      height: 80px; /* Smaller size on mobile */
+    }
+  }
+  
+
+  

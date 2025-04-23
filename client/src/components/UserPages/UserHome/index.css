@@ -1,0 +1,120 @@
+.jobseeker-home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #f8f8f8;
+  }
+  
+  .jobseeker-home-page-container {
+    margin-top: 20px;
+    width: 90%;
+    min-height: 100vh;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blue-heading {
+    color: #4caf50;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .jobseeker-home-page-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .jobseeker-home-page-container h2 {
+    color: #4caf50;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .jobseeker-home-page-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .jobseeker-home-page-container li {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Styling for the Note section */
+  .note-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .note-container h1 {
+    margin: 0; /* Remove any default margin for consistency */
+    font-size: 24px;
+  }
+  
+  .note-container p {
+    font-size: 18px;
+    margin: 0;
+    flex: 1; /* Allow the paragraph to take the available space */
+  }
+  
+  .note-container .blue-heading {
+    font-size: 18px;
+    text-decoration: underline; /* Underline the link */
+    margin-left: 5px; /* Add a small space between the paragraph and the link */
+  }
+  
+  .ignore-message {
+    margin-top: 10px; /* Ensure the "Ignore if completed" text is on a new line */
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 0; /* Prevent extra bottom margin */
+  }
+  
+  @media screen and (max-width: 600px) {
+    .jobseeker-home-page-container {
+      margin-top: 20px;
+      padding: 15px;
+      width: 95%;
+    }
+  
+    .blue-heading {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+    .blue-heading h1{
+      text-decoration: none;
+    }
+    .option {
+      font-size: 16px;
+    }
+  
+    .jobseeker-home-page-container p,
+    .jobseeker-home-page-container li {
+      font-size: 16px;
+    }
+  
+    .jobseeker-home-page-container h2 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+  
+    /* Adjust note-container for mobile screens */
+    .note-container {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      align-items: flex-start;
+    }
+  
+    .ignore-message {
+      font-size: 16px; /* Adjust font size for small screens */
+    }
+  }
+  

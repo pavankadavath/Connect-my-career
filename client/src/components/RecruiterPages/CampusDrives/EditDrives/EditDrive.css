@@ -1,0 +1,102 @@
+.edit-drive-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input[type="file"] {
+    padding: 5px;
+  }
+  
+  .save-btn {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  .save-btn:hover {
+    background: #0056b3;
+  }
+  
+  /* Uploaded Image Preview */
+  img {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .edit-drive-container {
+      max-width: 90%;
+      padding: 15px;
+    }
+    
+    input[type="text"], input[type="file"] {
+      font-size: 14px;
+    }
+  
+    .save-btn {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .edit-drive-container {
+      max-width: 95%;
+      padding: 10px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    input[type="text"], input[type="file"] {
+      font-size: 13px;
+      padding: 8px;
+    }
+  
+    .save-btn {
+      font-size: 14px;
+      padding: 10px;
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,165 @@
+/* Applied Drive Card Styles */
+.applied-drive-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Company Details Section */
+.applied-drive-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company-details ,.about-job{
+  flex-grow: 1;
+  color: #4a5568;
+}
+
+.company-logo img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+/* Job Details */
+.applied-drive-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.applied-drive-header p {
+  margin: 5px 0;
+  color: #4a5568;
+}
+
+/* Card Bottom - Status & Deadline */
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.application-status {
+  color: green;
+}
+
+.deadline {
+  color: red;
+}
+
+/* Action Buttons */
+.applied-drive-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.view-details-button, .withdraw-button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.view-details-button {
+  margin-top: 1rem;
+  height: 36px;
+  background-color: #4b9dee;
+  color: #4a5568;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+}
+
+.view-details-button:hover {
+  background-color: #e2e8f0;
+}
+
+.withdraw-button {
+  background-color: rgb(242, 86, 86);
+  color: white;
+  border: none;
+}
+
+.withdraw-button:hover {
+  background-color: rgb(186, 4, 4);
+}
+
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup Container */
+.popup-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 450px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Close Button */
+.close-popup-button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.close-popup-button:hover {
+  background: darkred;
+}
+
+/* Responsive Fixes */
+@media (max-width: 600px) {
+  .applied-drive-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .company-logo img {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .applied-drive-header, .card-bottom {
+    flex-direction: column;
+  }
+
+  .applied-drive-actions {
+    flex-direction: column;
+  }
+
+  .view-details-button, .withdraw-button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
