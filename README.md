@@ -2,9 +2,48 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Preview of My Project
+# 🔍 Purpose of "Connect My Career":
+To bridge the gap between recruiters and job seekers, especially students looking for campus placement opportunities or freshers looking for off-campus jobs.
 
-[Click here to visit the live website](https://careerguru-1wow.onrender.com/)
+# 💼 Key Features:
+Dual Roles:
+
+Recruiters can:
+
+Post jobs (on-campus or off-campus)
+
+Conduct campus drives using college codes
+
+Manage applicants (accept/reject/download data)
+
+Job Seekers can:
+
+Apply for jobs
+
+Update their profile with skills, college code, etc.
+
+Track application status (accepted/rejected/shortlisted)
+
+Email Notifications:
+
+Job seekers receive email updates when application status changes.
+
+Excel Export:
+
+Recruiters can download job application data as Excel files.
+
+Authentication & Verification:
+
+Email verification on registration for both recruiters and job seekers.
+
+Real-time Features:
+
+Notifications
+
+Updates on job status
+
+Responsive UI with dashboards for both user types.
+
 
 # Sample Credentials
 recruiter->
