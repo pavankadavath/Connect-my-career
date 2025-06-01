@@ -38,7 +38,7 @@ app.use("/email-api",emailAPI)
 //     })
 // }
 
-//-----------------deployment---------------------
+//-----------------deployment--------------------
 
 //create a middleware to handle invalid path
 
