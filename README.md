@@ -14,13 +14,13 @@ recruiter->
         wipro
         harikrishna@gmail.com -krishna123
 
-        tcs
-        lahari@gmail.com
-        lahari123
-
         accenture
         manohar@gmail.com
         manohar123
+
+        tcs
+        lahari@gmail.com
+        lahari123
 
         infosys
         prasad@gmail.com
@@ -48,7 +48,6 @@ user->
         pavan123
 
    
-
 
 ## Available Scripts
 
